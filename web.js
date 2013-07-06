@@ -3,12 +3,12 @@ var express = require('express');
 var fs = require('fs');
 var app = express.createServer(express.logger());
 
-var file_bin = fs.readFileSync("/home/ubuntu/Github/bitstarter/web.js");
+var file_bin = fs.readFileSync("/home/ubuntu/Github/bitstarter/index.html");
 
 var bin_string = file_bin.toString();
-
+console.log(bin_string);
 app.get('/', function(request, response) {
-  response.send(fs.readFileSync(bin_string));
+  response.send(bin_string);
 });
 
 var port = process.env.PORT || 5000;
