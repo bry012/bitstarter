@@ -1,10 +1,11 @@
 var express = require('express');
 
+var fs = require('fs');
 var app = express.createServer(express.logger());
 
-var file_bin = fs.readFileSync("/home/bryan/bitstarter/bitstarter/web.js");
+var file_bin = fs.readFileSync("/home/ubuntu/Github/bitstarter/web.js");
 
-var bin_string = buf.toString(file_bin,0,file_bin.length);
+var bin_string = file_bin.toString();
 
 app.get('/', function(request, response) {
   response.send(fs.readFileSync(bin_string));
