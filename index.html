@@ -41,11 +41,19 @@
 
       /* Main body and headings */
       body {
+        background: url("img/cloudbackground.jpg") fixed;
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      .navbar-inverse .brand:focus, .navbar-inverse .brand:hover  {
+       color: #0066cc;
       }
       .heading, .subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
+      }
+      .heading h1 {
+        color: rgb(255,255,51);
+        font-size: 75px;
       }
       p.lead {
         padding-top: 1.5%;
@@ -65,14 +73,14 @@
         padding: 2% 0%;
       }
       .actions {
-        background-color: #343434;
+        background-color: rgba(40,40,40,0.5);
         padding: 3% 0%;
       }
       .video, .thermometer, .order, .social, .statistics {
         text-align: center;
       }
       .statistics h3, .statistics p {
-        color: white;
+        color: #0066cc;
       }
       /* Marketing Copy and Footer */
       .copy {
@@ -106,7 +114,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="brand" href="#">Bitstarter</a>
+        <a class="brand" href="#">Combicloud</a>
         <div class="nav-collapse collapse">
           <ul class="nav">
             <li class="active"><a href="#">Home</a></li>
@@ -166,17 +174,17 @@
         <!-- Bootstrap progress bar -->
         <!-- http://twitter.github.io/bootstrap/components.html#progress -->
         <div class="thermometer progress active">
-          <div class="bar bar-success" style"width: 60%;"></div>
+          <div class="bar bar-success" style="width: 60%;"></div>
           <div class="bar bar-warning" style="width: 40%;"></div>
         </div>
       </div>
     </div>
-    <div class="span6 offset3 order">
+    <div class="span3 offset1 order">
       <!--Standard Bootstrap button. -->
       <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
       <button class = "btn btn-success btn-large">Preorder</button>
     </div>
-    <div class="span8 offset2 social">
+    <div class="span5 social">
       <!-- Social buttons are not included in default Bootstrap. -->
       <!-- See: http://noizwaves.github.io/bootstrap-social-button -->
       <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
