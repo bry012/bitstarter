@@ -1,3 +1,3 @@
 Combicloud
 
-immense-fortress-2480.herokuapp.com
+http://combicloud.herokuapp.com/
