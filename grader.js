@@ -62,6 +62,7 @@ var write_file = function(chosen_file, data){
 var checkUrl = function(url,checksfile, chosen_file){
     rest.get(url).on('complete',function(data) {
     $ = cheerio.load(data);
+	console.log($)
     json_out =  check_out($,checksfile)
     var outJ = JSON.stringify(json_out, null, 4);
     write_file(chosen_file,outJ);
@@ -82,6 +83,7 @@ var check_out = function($, checksfile){
         var present = $(checks[ii]).length > 0;
         out[checks[ii]] = present;
     }
+    console.log(out);
     return out;
 };
 
