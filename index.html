@@ -18,10 +18,10 @@
           padding-top: 60px;
         }
         .linediv-l {
-          border-right: 1px white solid;
+          border-right: 1px rgb(255,255,51) solid;
         }
         .linediv-r {
-          border-left: 1px white solid;
+          border-left: 1px rgb(255,255,51) solid;
         }
       }
       /* Landscape phones and down */
@@ -36,7 +36,24 @@
           border-top: 1px white solid;
         }
       }
-
+      .navbar-inverse .btn-navbar:hover,
+      .navbar-inverse .btn-navbar:focus {
+       color: rgb(255,255,255);
+       background-color: rgb(0,105,255);
+      }
+      .navbar-inverse .btn-navbar {
+        color: rgb(255,255,255);
+        text-shadow: 0px -1px 0px rgb(0,0,0,0.25);
+        background-color: rgb(14,14,14);
+        background-image: linear-gradient(to bottom, rgb(10,115,255), rgb(0,105,255));
+        background-repeat: repeat-x;
+      }
+      .navbar-inverse .nav-collapse .nav > li > a {
+        color: rgb(0,105,255);
+      }
+      .navbar-inverse .nav-collapse .nav > li > a:hover {
+        background-color: rgb(230,230,230);
+      }
       /* All form factors */
 
       /* Main body and headings */
@@ -46,7 +63,7 @@
       }
       .navbar-inverse .navbar-inner {
         background-color: rgb(27,27, 27);
-        linear-gradient(to bottom, rgb(34,34,34), rgb(17,17,17));
+        background-image: linear-gradient(to bottom, rgb(230,230,230), rgb(200,200,200));
         background-repeat: repeat-x;
         border-color: rgb(37,37,37);
         border-top-color: rgb(37,37,37);
@@ -56,7 +73,17 @@
         border-left-color-ltr-source: physical;
         border-right-color-ltr-source: physical;
         border-right-color-rtl-source: physical;
-        border-bottom: 10px solid white;
+        border-bottom: 3px solid rgb(0,102,255);
+      }
+      .navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover {
+        color: rgb(0,102,255);
+        background-color: rgb(210,210,210);
+      }
+      .navbar-inverse .nav > li > a:hover {
+        color: rgb(255,255,51)
+      }
+      .Combicloud {
+        border-bottom: solid 4px white;
       }
       .Combi, .Combi2, .cloud:hover,.cloud2:hover{
         color: #0066ff;
@@ -84,9 +111,12 @@
         font-size: 75px;
       }
       p.lead {
-        padding-top: 1.5%;
+        color: rgb(255,255,255);
+        padding-top: 3.0%;
         font-size: 24px;
         line-height: 30px;
+        font-weight: bold;
+        font-style: italics;
       }
       p {
         font-size: 18px;
@@ -101,8 +131,9 @@
         padding: 2% 0%;
       }
       .actions {
-        background-color: rgba(40,40,40,0.5);
+        background-color: rgba(255,255,255,0.5);
         padding: 3% 0%;
+        border: solid rgb(0,105,255) 3px;
       }
       .video, .thermometer, .order, .social, .statistics {
         text-align: center;
@@ -120,14 +151,14 @@
         padding: 2.5% 0%;
       }
       .footer {
-        color: #cccccc;
+        color: rgb(10,10,10);
         text-align: center;
       }
       .footer p {
-        font-size: 11px;
+        font-size: 12px;
       }
       .footer a {
-        color: #ccccff;
+        color: rbg(0,105,255);
       }
     </style>
  </head>
@@ -148,7 +179,7 @@
 	</a>
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><i class="icon-home"></i><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -163,8 +194,11 @@
     <!-- www.google.com/fonts/specimen/Ubuntu#pairings-->
     <div class='row-fluid heading'>
       <div class='span12'>
-	       <h1><span class="Combi2">Combi</span>
+	       <h1>
+		 <span class="Combicloud">
+		   <span class="Combi2">Combi</span>
 		   <span class="cloud2">cloud</span>
+		 </span>
 	       </h1>
       </div>
     </div>
@@ -234,14 +268,15 @@
     </div>
     <div class="span5 copy">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, labore, aperiam, consequuntur culpa reiciendis rerum dolor nihil earum deleniti est dolorem amet corrupti cum officia distinctio vel quo velit vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione hic laboriosam officia! Sequi repellat aliquid architecto. Aspernatur, excepturi quidem magni quam itaque? Cupiditate, ut illum totam nam veniam repellat perferendis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quisquam, corrupti, corporis, ex recusandae rem harum voluptatibus debitis quaerat voluptates quae accusamus soluta eveniet maxime suscipit dignissimos vel ipsam hic!
+        Cloud services are taking over the world and services like Dropbox, Google Drive and Ubuntu one have provided excellent services to store your data in the cloud. They even offer free storage up to 15 Gbs! However, one problem persists with using these cloud storage services to there full potential. How do I easily use all of these services together and take advantage of all that free cloud storage that is up for grabs? With Combicloud, that is made easy with a simple and intuitive app that integrates all of your cloud storage into one central location so that gigabytes upon gygabytes of free storage is made available in a well organized platform.
       </p>
     </div>
+    
   </div>
   <div clas="row-fluid section2">
     <div class="span5 offset1 copy copy-right">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fugiat excepturi ipsam molestiae reiciendis vel expedita tempora. Dolor, placeat, sapiente, eveniet, minus odio laborum accusantium praesentium aut sed earum velit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, animi, dolores cum consequatur culpa odio molestias dignissimos veritatis et obcaecati repellendus facere possimus numquam! Cum, iste nulla soluta alias quia.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, labore, aperiam, consequuntur culpa reiciendis rerum dolor nihil earum deleniti est dolorem amet corrupti cum officia distinctio vel quo velit vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione hic laboriosam officia! Sequi repellat aliquid architecto. Aspernatur, excepturi quidem magni quam itaque? Cupiditate, ut illum totam nam veniam repellat perferendis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quisquam, corrupti, corporis, ex recusandae rem harum voluptatibus debitis quaerat voluptates quae accusamus soluta eveniet maxime suscipit dignissimos vel ipsam hic!
       </p>
     </div>
     <div class="span5 asset">
@@ -258,24 +293,24 @@
         <div class="accordion-group">
           <div class="accordion-heading">
             <a href="#collapseOne" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2">
-              What does FAQ stand for?
+              What services are integrated into Combicloud?
             </a>
           </div>
           <div id="collapseOne" class="accordion-body collapse">
             <div class="accordion-inner">
-              Frequently Asked Question.
+              Currently, Google Drive, Dropbox and Ubuntu One are compatible with Combicloud.
             </div>
           </div>
         </div>
         <div class="accordion-group">
           <div class="accordion-heading">
             <a href="#collapseTwo" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2">
-              What's a Frequently Asked Question
+              Does Combicloud have a native app?
             </a>
           </div>
           <div id="collapseTwo" class="accordion-body collapse">
             <div class="accordion-inner">
-              A question which is commonly asked by users.
+              The Combicloud native app is in development. For now, enjoy the great functionality of the Combicloud web app.
             </div>
           </div>
         </div>
